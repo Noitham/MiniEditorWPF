@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MiniEditorWPF</name>
+    </assembly>
+    <members>
+        <member name="T:MiniEditorWPF.AcercaDe">
+            <summary>
+            Lógica de interacción para AcercaDe.xaml
+            </summary>
+            <summary>
+            AcercaDe
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.AcercaDe.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MiniEditorWPF.App">
+            <summary>
+            Lógica de interacción para App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:MiniEditorWPF.MainWindow">
+            <summary>
+            Lógica de interacción para MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.buttonExaminar_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que llamaremos al accionar el botón de examinar.
+            Nos abrirá un openFileDialog.
+            
+            El openFileDialog tendrá un filtro con las terminaciones de ficheros indicadas.
+            Añadimos un booleano el cual dependiendo de si hemos seleccionado un archivo correctamente, nos lo añadirá
+            a nuestro listBox1, en caso negativo nos mostrará un mensaje de error.
+            
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.comboBox1_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Método el cual asignamos a nuestro comboBox.
+            
+            El siguiente comboBox, dependiendo de nuestra selección hará una tarea u otra.
+            
+            En caso de:
+                Seleccionar índice 1 (".txt"): Añade a listBox2 los elementos con terminación .txt de los que cargamos en el listBox1 anteriormente.
+                Seleccionar índice 2 (".rtf"): Añade a listBox2 los elementos con terminación .rtf de los que cargamos en el listBox1 anteriormente.
+                Seleccionar índice 3 (".*"): Añade a listBox2 los elementos con cualquier terminación de los que cargamos en el listBox1 anteriormente.
+            
+            Antes de    cada acción hemos de hacer un clear() para dejar nuestro listBox2 limpio y no ir acumulando elementos.
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.listBox2_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Método que se accionará al hacer doble click sobre un item del listBox2.
+            
+            Al hacer doble click en un item lo que haremos será leerlo y escribir el contenido del mismo en el richTextBox3.
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.guardarToolBarButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método el cual llamamos a la hora de hacer click en la opcion guardar de nuestro ToolBar.
+            
+            Escribirá el contenido de nuestro richTextBox3 en el fichero que seleccionamos principalmente en nuestro listBox2.
+            
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.cortarToolBarButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método accionado al dar click a la opción cortar de nuestro ToolBar.
+            
+            Accionará el comando cortar (el texto seleccionado) de nuestro richTextBox3.
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.copiarToolBarButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método accionado al dar click a la opción copiar de nuestro ToolBar.
+            
+            Accionará el comando copiar (el texto seleccionado) de nuestro richTextBox3.
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.pegarToolBarButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método accionado al dar click a la opción pegar de nuestro ToolBar.
+            
+            Accionará el comando pegar (el texto seleccionado) de nuestro richTextBox3.
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.nuevoToolStripMenuItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método accionado al dar click a la opción nuevo de nuestro ToolStrip.
+            
+            Limpiará el contenido de nuestro richTextBox3.
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.guardarToolStripMenuItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método accionado al dar click a la opción guardar de nuestro ToolStrip.
+            
+            Llamará a la función guardarToolBarButton_Click, definida para nuestro botón guardar del ToolBar.
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.seleccionarTodoToolStripMenuItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método accionado al dar click a la opción seleccionarTodo de nuestro ToolStrip.
+            
+            Seleccionará todo el contenido de nuestro richTextBox3.
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.cortarToolStripMenuItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método accionado al dar click a la opción cortar de nuestro ToolStrip.
+            
+            Cortará el contenido (seleccionado) de nuestro richTextBox3.
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.copiarToolStripMenuItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método accionado al dar click a la opción copiar de nuestro ToolStrip.
+            
+            Copiará el contenido (seleccionado) de nuestro richTextBox3.
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.pegarToolStripMenuItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método accionado al dar click a la opción pegar de nuestro ToolStrip.
+            
+            Pegará el contenido (seleccionado) de nuestro richTextBox3.
+            </summary>
+        </member>
+        <member name="M:MiniEditorWPF.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MiniEditorWPF.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:MiniEditorWPF.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:MiniEditorWPF.Properties.Resources.Culture">
+            <summary>
+              Invalida la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos usando esta clase de recursos fuertemente tipados.
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

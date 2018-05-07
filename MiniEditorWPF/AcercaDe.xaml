@@ -1,0 +1,18 @@
+﻿<Window x:Class="MiniEditorWPF.AcercaDe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiniEditorWPF"
+        mc:Ignorable="d"
+        Title="Acerca de MiniEditor" Height="178.373" Width="326.24">
+    <Grid Background="#FFE5E5E5">
+        <TextBlock HorizontalAlignment="Left" Margin="53,29,0,0" TextWrapping="Wrap" Text="Autor: " VerticalAlignment="Top" Height="17" Width="44"/>
+        <TextBlock HorizontalAlignment="Left" Margin="121,29,0,0" TextWrapping="Wrap" Text="Daniel Morales" VerticalAlignment="Top" Height="17" Width="96"/>
+        <TextBlock HorizontalAlignment="Left" Margin="53,65,0,0" TextWrapping="Wrap" Text="Versión: " VerticalAlignment="Top" Height="18" Width="55"/>
+        <TextBlock HorizontalAlignment="Left" Margin="122,65,0,0" TextWrapping="Wrap" Text="0.2.0" VerticalAlignment="Top" Height="18" Width="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="52,101,0,0" TextWrapping="Wrap" Text="Fecha: " VerticalAlignment="Top" Height="18" Width="44"/>
+        <TextBlock HorizontalAlignment="Left" Margin="121,101,0,0" TextWrapping="Wrap" Text="12 Abril 2018" VerticalAlignment="Top" Height="18" Width="85"/>
+
+    </Grid>
+</Window>

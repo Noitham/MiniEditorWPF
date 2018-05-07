@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MiniEditorWPF.exe" version="1.0.0.0" publicKeyToken="9d6efc8c4a813a5f" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MiniEditorWPF" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MiniEditorWPF.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de UAC
+          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+          nodo requestedExecutionLevel por uno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar Virtualización de archivos y Registro para compatibilidad con 
+         versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MiniEditorWPF.exe" size="209416">
+      <assemblyIdentity name="MiniEditorWPF" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jkPnhmHfNykKq0+DqY4tAFSCjTo2WxagsTug7PPpDWI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="MiniEditorWPF.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=AzureAD\DanielMoralesGonzale" issuerKeyHash="7e94ebf3f78ec31e42843d381471a4ba669281c9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>73BFs5G7FEoAjs8dV6N1aoXP29cHVp+1FsSznw+HmL0=</DigestValue></Reference></SignedInfo><SignatureValue>V+VGSoWQlQstvYSaiUfnS2iBphnuRVMYrc1sFw4mKGueP8z1YpMRD8ZCohJ7/nHo3l/D5jJCl7RQfuza+sD51HkmA1BRWKYuho+lQ8mhNHtOJm3SzlODt91/8y3jwhQbi/miAFb1DP5ZVnHMX+Zz1oq81nYWBEnXpt4VYdCnAUQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>00RNmpR53l7r5V7qlV/qxLOQtjLTkv7Al8bbVUJ/ZxsjsSbNd9byT3ejWbJrw+WhLXReqsatUztJSlC01t4QGqTiRyOgvXSvrvOiE8Aw4NGoDZE6wNu/oKM1cb8MyAt7EDIjs2CPSap4FCUJTB/KyxsNzS++1jqKRE/dF9WI73E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bd98870f9fb3c416b59f5607d7dbcf856a75a3571dcf8e004a14bb91b34570ef" Description="" Url=""><as:assemblyIdentity name="MiniEditorWPF.exe" version="1.0.0.0" publicKeyToken="9d6efc8c4a813a5f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=AzureAD\DanielMoralesGonzale</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>4XZ5dO14aOUwYrC5MORs8xSjGisyjgSK9IspyCsK59k=</DigestValue></Reference></SignedInfo><SignatureValue>u/io5lO1FN8ep82P5n7dKyA/2YSksp7M71IKVLKVrpMeGmfjiAlSMHjMtq8nltyu/u6B+/xUJmDcptgvR1aHnR3OpfacET+EkL3kM7aKB33qyTl11UVC0QlFwF+y5q1NV4tcwyKeybODM4zBN5DZwP6e44D5beL7G7wKUPVOga0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>00RNmpR53l7r5V7qlV/qxLOQtjLTkv7Al8bbVUJ/ZxsjsSbNd9byT3ejWbJrw+WhLXReqsatUztJSlC01t4QGqTiRyOgvXSvrvOiE8Aw4NGoDZE6wNu/oKM1cb8MyAt7EDIjs2CPSap4FCUJTB/KyxsNzS++1jqKRE/dF9WI73E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICCTCCAXKgAwIBAgIQGElAmwfopKNO+gOxZu4RCjANBgkqhkiG9w0BAQsFADBDMUEwPwYDVQQDHjgAQQB6AHUAcgBlAEEARABcAEQAYQBuAGkAZQBsAE0AbwByAGEAbABlAHMARwBvAG4AegBhAGwAZTAeFw0xODA0MjYxMTQxMThaFw0xOTA0MjYxNzQxMThaMEMxQTA/BgNVBAMeOABBAHoAdQByAGUAQQBEAFwARABhAG4AaQBlAGwATQBvAHIAYQBsAGUAcwBHAG8AbgB6AGEAbABlMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDTRE2alHneXuvlXuqVX+rEs5C2MtOS/sCXxttVQn9nGyOxJs131vJPd6NZsmvD5aEtdF6qxq1TO0lKULTW3hAapOJHI6C9dK+u86ITwDDg0agNkTrA27+gozVxvwzIC3sQMiOzYI9JqngUJQlMH8rLGw3NL77WOopET90X1YjvcQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAMRe8RRC0Ixumo7TC4KKS2QlZbag5m6lUSC1ZbBvi2bVMhIS3ieQcl9GNFQ2A5ENLo8nprrlqqmG/PMxpVh1sGdLdssjEbRCm1gdm61dWyAmN50zqblMNFYGDC3tHqjksxK4rWL3cdiScD4DX2KPNalkPUAuC3l9P9oc2CpkdSpA</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
